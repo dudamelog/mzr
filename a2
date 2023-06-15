@@ -1,0 +1,14 @@
+import random
+
+lista = [random.randint(0, 20) for _ in range(50)]
+soma = sum(lista)
+print("Soma dos valores:", soma)
+
+num_9 = lista.count(9)
+print("Número de vezes de aparição do número 9:", num_9)
+
+maior_valor = max(lista)
+print("Maior valor da lista:", maior_valor)
+
+pmaior_valor = [i for i, valor in enumerate(lista) if valor == maior_valor]
+print("Posições onde aparecem o maior valor:", pmaior_valor)
