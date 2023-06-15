@@ -1,0 +1,25 @@
+lista = []
+maiorq= 0
+soma_p= 0
+soma_i= 0
+qt= 0
+
+while True:
+    num = float(input("Digite um valor inteiro (quando desejar parar digite um valor negativo): "))
+    if num<0:
+        break
+
+    lista.append(num)
+    print(lista)
+    if num>0:
+        qt += 1
+        print("Quantidade de valores armazenados na lista é:", qt)
+    if num>5:
+        maiorq += 1
+        print ("Quantidade de números maiores que 5:", maiorq)
+    if num % 2 == 0:
+        soma_p += 1
+        print("A soma dos valores pares armazenados na lista é:", soma_p)
+    if num % 2 == 1:
+        soma_i += 1
+        print("A soma dos valores ímpares armazenados na lista é:", soma_i)
